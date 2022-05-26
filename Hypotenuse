@@ -1,0 +1,10 @@
+package first;
+import javax.swing.JOptionPane;
+public class main{
+	public static void main(String[] args) {
+		int sideX = Integer.parseInt(JOptionPane.showInputDialog("Enter side X:"));
+		int sideY = Integer.parseInt(JOptionPane.showInputDialog("Enter side Y:"));
+		double hypotenuse = Math.sqrt(Math.pow(sideX,2)+Math.pow(sideY,2));
+		JOptionPane.showMessageDialog(null, "The hypotenuse is: "+ hypotenuse);
+	}
+}
