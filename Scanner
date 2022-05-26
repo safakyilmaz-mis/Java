@@ -1,0 +1,12 @@
+package first;
+import java.util.Scanner;
+public class main{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in); //we are doing this equality because its better to use like that
+		System.out.println("Enter value:");
+		String variable = scanner.nextLine();
+		System.out.println("You entered: "+ variable);
+	}
+}
+
+//your package name may change!
