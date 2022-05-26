@@ -8,3 +8,5 @@ public class main{
 		JOptionPane.showMessageDialog(null, "The hypotenuse is: "+ hypotenuse);
 	}
 }
+
+//your package name may change!
