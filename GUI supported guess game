@@ -1,0 +1,19 @@
+package first; // this will be your package name
+import java.util.Random;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class main{
+	public static void main(String[] args) {
+		Random random = new Random();
+		Scanner scanner = new Scanner(System.in);
+		int number = random.nextInt(10)+1; //you can change number
+		//System.out.println(number); //(show random number / test)
+		int enterV = Integer.parseInt(JOptionPane.showInputDialog("Guess the number"));
+		if (number == enterV) {
+			JOptionPane.showMessageDialog(null, "You are right");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You are wrong");
+		}
+	}
+}
