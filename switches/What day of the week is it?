@@ -1,0 +1,25 @@
+package first;
+import javax.swing.JOptionPane;
+public class main{
+	public static void main(String[] args) {
+		int number = Integer.parseInt(JOptionPane.showInputDialog("What day of the week is it?"));
+		switch(number){
+			case 1: JOptionPane.showInternalMessageDialog(null, "You are in first day");
+			break;
+			case 2: JOptionPane.showInternalMessageDialog(null, "You are in second day");
+			break;
+			case 3: JOptionPane.showInternalMessageDialog(null, "You are in third day");
+			break;
+			case 4: JOptionPane.showInternalMessageDialog(null, "You are in fourth day");
+			break;
+			case 5: JOptionPane.showInternalMessageDialog(null, "You are in fifth day");
+			break;
+			case 6: JOptionPane.showInternalMessageDialog(null, "You are in sixth day");
+			break;
+			case 7: JOptionPane.showInternalMessageDialog(null, "You are in seventh day");
+			break;
+			default: JOptionPane.showInternalMessageDialog(null, "There are seven days in one week\nplease enter valid value");
+			
+		}
+	}
+}
