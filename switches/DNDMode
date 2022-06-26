@@ -1,0 +1,26 @@
+package first;
+import javax.swing.JOptionPane;
+public class main{
+	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null, "how many times you called?");
+		int DNDMode = 1;
+		String calls = "3 times";
+		switch(calls) {
+		case "no time": JOptionPane.showMessageDialog(null, "you did not call");
+		break;
+		case "1 time": JOptionPane.showMessageDialog(null, "one time you called");
+		break;
+		case "2 times": JOptionPane.showMessageDialog(null, "two times you called");
+		break;
+		case "3 times": JOptionPane.showMessageDialog(null, "three times you called");
+		DNDMode = 0;
+		if (DNDMode == 0) {
+			JOptionPane.showConfirmDialog(null, "Do not disturb mode disabled");
+		}
+		break;
+		default:
+			JOptionPane.showMessageDialog(null, "You called more than three tımes");
+			break;
+		}
+	}
+}
