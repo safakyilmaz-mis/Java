@@ -1,0 +1,19 @@
+package first;
+import javax.swing.JOptionPane;
+public class main{
+	public static void main(String[] args) {
+		String height = JOptionPane.showInputDialog("Please enter your height (e.g: 1.85) :");
+		String weight = JOptionPane.showInputDialog("Please enter your weight:");
+		Float heightFloat = Float.parseFloat(height);
+		heightFloat = heightFloat * heightFloat;
+		Float weightFloat = Float.parseFloat(weight);
+		float BMI = weightFloat / heightFloat;
+		JOptionPane.showMessageDialog(null,"Your body mass index is: "+ BMI);
+		if(18.5 < BMI && BMI < 24.9 /*|| 18.5 < BMI && BMI < 24.9*/) { //You can see ("And" "&&") and ("Or" "||") operator in this line
+			JOptionPane.showMessageDialog(null, "Your body mass index is normal");}
+		else if(18.5 > BMI) {
+			JOptionPane.showMessageDialog(null, "Your body mass index under the limits");}
+		else if(24.9 < BMI) {
+			JOptionPane.showMessageDialog(null, "Your body mass index over the limits");}
+	}
+}
